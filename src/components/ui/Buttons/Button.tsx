@@ -25,10 +25,10 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
 
       switch (size) {
         case SIZES.XS:
-          sizeClass = "p-1";
+          sizeClass = "p-1 ";
           break;
         case SIZES.SM:
-          sizeClass = "py-2 px-3";
+          sizeClass = "py-2 px-3 ";
           break;
 
         case SIZES.MD:

@@ -5,7 +5,7 @@ import React from "react";
 
 const HomeHeader = () => {
   return (
-    <header className="my-4 w-full ">
+    <header className=" hidden lg:flex my-4 w-full ">
       <Container className="flex items-center justify-between  ">
         <div>
         

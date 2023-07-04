@@ -7,15 +7,15 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    screens: {
-      sm: "320px",
-      md: "600px",
-      lg: "976px",
-      xl: "1280px",
-      xxl: "1600px",
-    },
-
     extend: {
+      screens: {
+        xs: "280px",
+        sm: "375px",
+        md: "600px",
+        lg: "976px",
+        xl: "1280px",
+        xxl: "1600px",
+      },
       fontFamily: {
         dmSans: ["var(--font-dm-sans)"],
         mono: ["var(--font-roboto-mono)"],
@@ -28,10 +28,17 @@ module.exports = {
       backgroundColor: {
         main: "rgba(255, 237, 204, 0.5)",
       },
+      backgroundImage: {
+        "home-hero": "url('/public/images/hero.png')",
+        // 'footer-texture': "url('/img/footer-texture.png')",
+      },
       colors: {
         primary: "#543EE0",
         secondary: "#111111",
         tetiary: "#D0D0D0",
+      },
+      maxWidth: {
+        "8xl": "1600px",
       },
     },
   },
