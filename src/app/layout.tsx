@@ -1,7 +1,14 @@
+import HomeHeader from '@/layout/HomeHeader'
 import './globals.css'
-import { Inter } from 'next/font/google'
+import {  DM_Sans } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+const dm_Sans = DM_Sans({
+  subsets: ["latin"],
+  weight: ["400", "500", "700"],
+  variable: "--font-dm-sans",
+  style: ["normal", "italic"],
+});
+
 
 export const metadata = {
   title: 'Create Next App',
@@ -15,7 +22,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${dm_Sans.variable} font-dmSans`}>{children}</body>
     </html>
-  )
+  );
 }
