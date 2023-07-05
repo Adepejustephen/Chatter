@@ -22,7 +22,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${dm_Sans.variable} font-dmSans`}>{children}</body>
+      <body className={`${dm_Sans.variable} font-dmSans text-secondary`}>{children}</body>
     </html>
   );
 }

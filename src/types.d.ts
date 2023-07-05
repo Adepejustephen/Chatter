@@ -100,3 +100,10 @@ interface ContainerProps {
   children?: ReactNode;
   className?: string;
 }
+
+
+interface CardProps {
+  elevation?: 1 | 2 | 3 | 4 | 5;
+  children?: ReactNode;
+  className?: string;
+}

@@ -36,6 +36,7 @@ module.exports = {
         primary: "#543EE0",
         secondary: "#111111",
         tetiary: "#D0D0D0",
+        "black-400": "#626262",
       },
       maxWidth: {
         "8xl": "1600px",

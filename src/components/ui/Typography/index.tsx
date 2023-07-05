@@ -7,4 +7,6 @@ const Typography = forwardRef<HTMLButtonElement, TypographyProps<any>>(
   }
 );
 
+Typography.displayName="typography"
+
 export default Typography;

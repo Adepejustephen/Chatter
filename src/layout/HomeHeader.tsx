@@ -10,7 +10,7 @@ const HomeHeader = () => {
         <div>
         
           <Link href="/">
-            <span className="text-primary font-bold text-5xl">CHATTER</span>
+            <h1 className="text-primary font-bold text-5xl">Chatter</h1>
           </Link>
         </div>
         <div className="flex items-center gap-4">
