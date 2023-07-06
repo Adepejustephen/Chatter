@@ -37,6 +37,7 @@ module.exports = {
         secondary: "#111111",
         tetiary: "#D0D0D0",
         "black-400": "#626262",
+        shadeOrange: "rgba(255, 237, 204, 0.50)",
       },
       maxWidth: {
         "8xl": "1600px",
