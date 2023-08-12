@@ -1,5 +1,6 @@
 import { ElementType, ReactNode } from "react";
 import { SIZES } from "./components/ui/utils/constant";
+import { type } from "os";
 
 
 interface ButtonProps {
@@ -107,3 +108,16 @@ interface CardProps {
   children?: ReactNode;
   className?: string;
 }
+
+
+// Input Props
+
+type InputProps = {
+  prefix?: ReactNode;
+  suffix?: ReactNode;
+  className?: string;
+}  & React.InputHTMLAttributes<HTMLInputElement> 
+
+
+// input types
+

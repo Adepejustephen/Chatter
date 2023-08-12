@@ -32,8 +32,8 @@ const HomeHeader = () => {
         </div>
 
         <div className="flex gap-2 items-center">
-          <Button variant="outlined">Login</Button>
-          <Button>Sign up</Button>
+          <Button variant="outlined"><Link href="/login">Login</Link></Button>
+          <Button><Link href="/register">Sign up</Link></Button>
         </div>
       </Container>
     </header>

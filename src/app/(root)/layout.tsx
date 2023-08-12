@@ -1,5 +1,5 @@
 import HomeHeader from '@/layout/HomeHeader'
-import './globals.css'
+import '../globals.css'
 import {  DM_Sans } from 'next/font/google'
 
 const dm_Sans = DM_Sans({

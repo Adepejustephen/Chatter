@@ -30,6 +30,7 @@ module.exports = {
       },
       backgroundImage: {
         "home-hero": "url('/public/images/hero.png')",
+        "auth-bg": "url('/public/images/auth-bg.png')",
         // 'footer-texture': "url('/img/footer-texture.png')",
       },
       colors: {
@@ -44,5 +45,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-animate")],
 };
