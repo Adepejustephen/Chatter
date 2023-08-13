@@ -5,7 +5,7 @@ import { forwardRef } from "react";
 // const regInputType =    "text" || "email" || "password" || "number" || "tel";
 
 export const Input = forwardRef<HTMLInputElement, InputProps>((props, ref) => {
-  const { type, placeholder, suffix, prefix } = props;
+  const { type, placeholder, suffix, prefix ,className} = props;
   const prefixClass = prefix?"pl-10":""
   const suffixClass = suffix?"pr-12":""
 
@@ -21,6 +21,7 @@ export const Input = forwardRef<HTMLInputElement, InputProps>((props, ref) => {
         className={classNames(
           prefixClass,
           suffixClass,
+          className,
           "w-full border-gray-300 border p-3 outline-0 focus:border-primary hover:border-primary rounded-lg text-secondary shadow text-sm md:text-base placeholder:text-secondary"
         )}
       />
