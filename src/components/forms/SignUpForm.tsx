@@ -81,14 +81,31 @@ export const SignUpForm = () => {
         </div>
         <FormField
           control={form.control}
+          name="email"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Email address</FormLabel>
+              <FormControl>
+                <Input
+                  type="email"
+                  placeholder="Johndoe@gmail.com "
+                  {...field}
+                />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+        <FormField
+          control={form.control}
           name="role"
           render={({ field }) => (
             <FormItem>
               <FormLabel>You are joining as?</FormLabel>
               <FormControl>
                 <Input
-                  type="email"
-                  placeholder="Johndoe@gmail.com "
+                  type="text"
+                  placeholder="Writer "
                   {...field}
                 />
               </FormControl>

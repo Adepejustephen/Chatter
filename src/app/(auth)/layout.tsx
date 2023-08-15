@@ -23,20 +23,24 @@ export default function AuthLayout({
   return (
     <html lang="en">
       <body
-        className={`${dm_Sans.variable} font-dmSans  h-full text-secondary`}
+        className={`${dm_Sans.variable} font-dmSans  w-full  text-secondary `}
       >
-        <div className={`   flex h-full min-h-screen  max-w-screen-xxl mx-auto`}>
-          <div className=" hidden lg:flex flex-col  items-center justify-center relative max-w-[34.375rem] w-full min-h-screen  h-full bg-[url('/images/auth-bg.png')]  bg-no-repeat bg-center bg-cover">
-            <div className="bg-black w-full h-full absolute top-0 opacity-50"></div>
-            <div className="flex flex-col gap-6 items-center z-10 text-white px-9">
-              <h1 className="font-bold text-4xl">CHATTER</h1>
-              <p className="text-2xl font-medium">
-                Unleash the Power of Words, Connect with Like-minded Readers and
-                Writers
-              </p>
+        <main className={`  w-full  flex h-full  max-w-screen-xxl mx-auto `}>
+          <div className="relative min-h-screen">
+            <div className="sticky top-0 left-0">
+              <div className=" hidden lg:flex flex-col  items-center justify-center relative max-w-[34.375rem] w-full h-screen   bg-[url('/images/auth-bg.png')]  bg-no-repeat bg-center bg-cover">
+                <div className="bg-black w-full h-full absolute top-0 opacity-50"></div>
+                <div className="flex flex-col gap-6 items-center z-10 text-white px-9">
+                  <h1 className="font-bold text-4xl">CHATTER</h1>
+                  <p className="text-2xl font-medium">
+                    Unleash the Power of Words, Connect with Like-minded Readers
+                    and Writers
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-          <div className="flex flex-col gap-10 max-w-lg w-full my-10 mx-auto">
+          <div className="flex flex-col gap-10 max-w-lg w-full my-10 mx-auto px-8 xl:px-0">
             <div className="grid grid-cols-2 w-full items-center">
               <Link
                 href={"/register"}
@@ -59,7 +63,7 @@ export default function AuthLayout({
             </div>
             {children}
           </div>
-        </div>
+        </main>
       </body>
     </html>
   );
