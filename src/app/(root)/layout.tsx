@@ -1,4 +1,4 @@
-import HomeHeader from '@/layout/HomeHeader'
+
 import '../globals.css'
 import {  DM_Sans } from 'next/font/google'
 

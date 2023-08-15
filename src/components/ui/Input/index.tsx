@@ -22,7 +22,7 @@ export const Input = forwardRef<HTMLInputElement, InputProps>((props, ref) => {
           prefixClass,
           suffixClass,
           className,
-          "w-full border-gray-300 border p-3 outline-0 focus:border-primary hover:border-primary rounded-lg text-secondary shadow text-sm md:text-base placeholder:text-secondary"
+          "w-full border-gray-300 border p-3 outline-0 focus:border-primary hover:border-primary rounded-lg text-secondary placeholder:text-sm shadow text-sm md:text-base placeholder:text-neutral-400"
         )}
       />
       <div className="absolute top-1/2 right-3 transform -translate-y-1/2">

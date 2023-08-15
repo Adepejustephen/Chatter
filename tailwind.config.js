@@ -24,15 +24,13 @@ module.exports = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "home-hero": "url('/public/images/hero.png')",
+        "auth-bg": "url('/public/images/auth-bg.png')",
       },
       backgroundColor: {
         main: "rgba(255, 237, 204, 0.5)",
       },
-      backgroundImage: {
-        "home-hero": "url('/public/images/hero.png')",
-        "auth-bg": "url('/public/images/auth-bg.png')",
-        // 'footer-texture': "url('/img/footer-texture.png')",
-      },
+    
       colors: {
         primary: "#543EE0",
         secondary: "#111111",

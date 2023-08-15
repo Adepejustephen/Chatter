@@ -1,6 +1,7 @@
+"use client"
 import { Button, Card, CardCaption, CardIcon, CardTitle, Container } from "@/components";
 import HomeHeader from "@/layout/HomeHeader";
-// import { Container } from "postcss";
+
 import Image from "next/image";
 import AboutImage from "/public/images/aboutImage.png"
 import AnalyticsIcon from "/public/svgs/analytics.svg"
