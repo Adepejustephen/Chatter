@@ -8,9 +8,8 @@ const HomeHeader = () => {
     <header className=" hidden lg:flex my-4 w-full ">
       <Container className="flex items-center justify-between  ">
         <div>
-        
           <Link href="/">
-            <h1 className="text-primary font-bold text-5xl">Chatter</h1>
+            <h1 className="text-primary font-bold text-[2rem]">CHATTER</h1>
           </Link>
         </div>
         <div className="flex items-center gap-4">
@@ -32,8 +31,12 @@ const HomeHeader = () => {
         </div>
 
         <div className="flex gap-2 items-center">
-          <Button variant="outlined"><Link href="/login">Login</Link></Button>
-          <Button><Link href="/register">Sign up</Link></Button>
+          <Button variant="outlined">
+            <Link href="/login">Login</Link>
+          </Button>
+          <Button>
+            <Link href="/register">Sign up</Link>
+          </Button>
         </div>
       </Container>
     </header>

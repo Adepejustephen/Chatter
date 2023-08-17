@@ -30,13 +30,14 @@ module.exports = {
       backgroundColor: {
         main: "rgba(255, 237, 204, 0.5)",
       },
-    
+
       colors: {
         primary: "#543EE0",
         secondary: "#111111",
         tetiary: "#D0D0D0",
-        "black-400": "#626262",
+        ash: "#626262",
         shadeOrange: "rgba(255, 237, 204, 0.50)",
+        danger: "#FF1400",
       },
       maxWidth: {
         "8xl": "1600px",

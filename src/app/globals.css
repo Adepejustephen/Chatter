@@ -2,3 +2,72 @@
 @tailwind components;
 @tailwind utilities;
 /*  */
+
+
+@layer base {
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  .studioNav:hover .studioNav__overlay {
+    display: flex;
+  }
+
+  /* ::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff3a;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+  border-radius: 20px;
+} */
+
+
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: block;
+    width: 2px;
+
+  }
+
+  /* width */
+  .scrollbar-width::-webkit-scrollbar {
+    width: 3px;
+
+   
+  }
+
+  /* Track */
+  .scrollbar-width::-webkit-scrollbar-track {
+    background: #f1f1f1;
+     height: 10px;
+  }
+  .scrollbar-width::-webkit-scrollbar-thumb:window-inactive {
+background: #ffff;
+}
+
+  /* Handle */
+  .scrollbar-width::-webkit-scrollbar-thumb {
+    background: #232f3e;
+      border-top: 20px
+
+  }
+
+  /* Handle on hover */
+  .scrollbar-width::-webkit-scrollbar-thumb:hover {
+    background: #543EE0;
+  }
+
+  /* .studioNav:hover {
+    display:none;
+  } */
+}
