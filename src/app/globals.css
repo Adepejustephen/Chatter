@@ -57,7 +57,7 @@ background: #ffff;
 
   /* Handle */
   .scrollbar-width::-webkit-scrollbar-thumb {
-    background: #232f3e;
+    background: #d8d3fc;
       border-top: 20px
 
   }

@@ -2,7 +2,6 @@ import { ElementType, ReactNode } from "react";
 import { SIZES } from "./components/ui/utils/constant";
 import { type } from "os";
 
-
 interface ButtonProps {
   /**
    * The content of the component.
@@ -102,13 +101,11 @@ interface ContainerProps {
   className?: string;
 }
 
-
 interface CardProps {
   elevation?: 1 | 2 | 3 | 4 | 5;
   children?: ReactNode;
   className?: string;
 }
-
 
 // Input Props
 
@@ -116,12 +113,11 @@ type InputProps = {
   prefix?: ReactNode;
   suffix?: ReactNode;
   className?: string;
-}  & React.InputHTMLAttributes<HTMLInputElement> 
-
+} & React.InputHTMLAttributes<HTMLInputElement>;
 
 // input types
 
-interface AvaterProps {
+interface AvatarProps {
   size: number;
   className?: string;
   src: string;

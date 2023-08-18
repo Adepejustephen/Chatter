@@ -1,10 +1,10 @@
-import { AvaterProps } from "@/types";
+import { AvatarProps } from "@/types";
 import classNames from "classnames";
 import Image from "next/image";
 import React, { forwardRef } from "react";
 
-export const Avater = forwardRef<HTMLDivElement, AvaterProps>((props, ref) => {
-  const { className, src, size,  } = props;
+export const Avatar = forwardRef<HTMLDivElement, AvatarProps>((props, ref) => {
+  const { className, src, size } = props;
 
   const classess = classNames(
     className,
@@ -12,13 +12,13 @@ export const Avater = forwardRef<HTMLDivElement, AvaterProps>((props, ref) => {
   );
   return (
     <div
-    {...props}
+      {...props}
       className={`${classess} relative`}
       ref={ref}
       style={{ height: size, width: size }}
     >
       <Image
-        alt="avater"
+        alt="Avatar"
         src={src}
         fill={true}
         className="object-cover rounded-full  w-full"
@@ -27,8 +27,8 @@ export const Avater = forwardRef<HTMLDivElement, AvaterProps>((props, ref) => {
   );
 });
 
-Avater.displayName = "Avater";
+Avatar.displayName = "Avatar";
 
-Avater.defaultProps = {
-    size: 32
-}
+Avatar.defaultProps = {
+  size: 32,
+};
