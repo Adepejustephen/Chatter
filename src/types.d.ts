@@ -121,3 +121,9 @@ type InputProps = {
 
 // input types
 
+interface AvaterProps {
+  size: number;
+  className?: string;
+  src: string;
+  onClick?: () => void;
+}

@@ -11,17 +11,17 @@ import HomeFooter from "@/layout/HomeFooter";
 
 const whyData = [
   {
-    icon: AnalyticsIcon,
+    icon: <AnalyticsIcon/>,
     title: "Analytics",
     txt: "Analytics to track the number of views, likes and comment and also analyze the performance of your articles over a period of time",
   },
   {
-    icon: InteractionIcon,
+    icon: <InteractionIcon/>,
     title: "Social interactions",
     txt: "Users on the platform can interact with posts they like, comment and engage in discussions",
   },
   {
-    icon: ContentIcon,
+    icon:< ContentIcon/>,
     title: "Content creation",
     txt: "Write nice and appealing with our in-built markdown, a rich text editor",
   },
@@ -47,7 +47,7 @@ export default function Home() {
         </div>
         <section className="w-full py-[6rem]">
           <Container className="flex flex-col items-center gap-20 lg:flex-row lg:justify-between lg:items-start lg:gap-20 w-full">
-            <div className="flex flex-col gap-8 flex-1">
+            <div className="flex flex-col gap-8 flex-1 items-center">
               <h4 className="text-3xl font-bold md:text-4xl lg:text-5xl ">
                 About Chatter
               </h4>
@@ -90,13 +90,8 @@ export default function Home() {
             {whyData.map((item, idx) => {
               return (
                 <Card key={idx} className="px-[1.125rem]">
-                  <CardIcon className="relative w-16 h-16 md:w-24 md:h-20">
-                    <Image
-                      src={item.icon}
-                      alt={`${item.title} icon`}
-                      fill={true}
-                      className="object-contain"
-                    />
+                  <CardIcon className="mb-5">
+{item.icon}
                   </CardIcon>
                   <CardTitle>{item.title}</CardTitle>
                   <CardCaption>{item.txt}</CardCaption>

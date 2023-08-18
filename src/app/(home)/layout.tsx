@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${dm_Sans.variable} font-dmSans text-secondary `}>
-        <div className="relative h-screen flex flex-col lg:flex-row xxl:max-w-[1600px] mx-auto">
+        <div className="relative h-screen flex flex-col gap-5 lg:gap-0 lg:flex-row xxl:max-w-[1600px] mx-auto">
          
           <SideBar /> {children}
         </div>
