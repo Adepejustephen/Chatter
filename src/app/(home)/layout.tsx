@@ -1,5 +1,5 @@
 "use client"
-import { SideBar } from "@/components";
+import { SideBar, TopBar } from "@/components";
 import "../globals.css";
 import { DM_Sans } from "next/font/google";
 
@@ -23,9 +23,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${dm_Sans.variable} font-dmSans text-secondary `}>
-        <div className="relative h-screen flex flex-col gap-5 lg:gap-0 lg:flex-row xxl:max-w-[1600px] mx-auto">
-         
-          <SideBar /> {children}
+        <div className="relaive h-screen flex flex-col gap-5 lg:gap-0 lg:flex-row xxl:max-w-[1600px] mx-auto">
+          <SideBar />
+          <div className="flex flex-col gap-6 w-full">
+            <TopBar />
+            <main className="border shadow w-full ml-6 mr-auto rounded-sm max-w-5xl">
+              {children}
+            </main>
+          </div>
         </div>
       </body>
     </html>

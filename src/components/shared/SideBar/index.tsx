@@ -1,3 +1,4 @@
+"use client"
 import { useMediaQuery } from "@uidotdev/usehooks";
 import MobileNav from "./MobileNav"
 import DesktopNav from "./DesktopNav"
