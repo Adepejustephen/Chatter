@@ -110,8 +110,8 @@ interface CardProps {
 // Input Props
 
 type InputProps = {
-  prefix?: ReactNode;
   suffix?: ReactNode;
+  prefix?: ReactNode;
   className?: string;
 } & React.InputHTMLAttributes<HTMLInputElement>;
 

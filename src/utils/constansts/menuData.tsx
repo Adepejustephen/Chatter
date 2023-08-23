@@ -14,7 +14,7 @@ type LinkProps = {
 export const Navlinks: LinkProps[] = [
   {
     name: "Feed",
-    link: "/home",
+    link: "/feed",
     icon: <FeedIcon />,
   },
   {

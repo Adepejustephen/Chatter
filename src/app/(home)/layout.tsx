@@ -1,7 +1,9 @@
 "use client"
-import { SideBar, TopBar } from "@/components";
+
 import "../globals.css";
 import { DM_Sans } from "next/font/google";
+import { TopBar } from "@/components/shared/TopBar";
+import { SideBar } from "@/components/shared/SideBar";
 
 const dm_Sans = DM_Sans({
   subsets: ["latin"],

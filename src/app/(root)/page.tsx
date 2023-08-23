@@ -1,13 +1,13 @@
 "use client"
 import { Button, Card, CardCaption, CardIcon, CardTitle, Container } from "@/components";
-import HomeHeader from "@/layout/HomeHeader";
+import HomeHeader from "@/components/layout/HomeHeader";
 
 import Image from "next/image";
 import AboutImage from "/public/images/aboutImage.png"
 import AnalyticsIcon from "/public/svgs/analytics.svg"
 import InteractionIcon from "/public/svgs/interaction.svg"
 import ContentIcon from "/public/svgs/content.svg"
-import HomeFooter from "@/layout/HomeFooter";
+import HomeFooter from "@/components/layout/HomeFooter";
 
 const whyData = [
   {
